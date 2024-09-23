@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pac-Man Simplificado</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="pacman-nucleo2">
+      <div class="informacion-pacman">
+        <div class="texto texto0" id="texto_titulo">AVANCES Y EVOLUCION</div>
+        <div class="dato1_pag1_pacman">
+          <img src="imagenes/flechas_pacman_pag_1.png" id="flechas_dato1_pacman" />
+          <div class="texto_dato1_pag1_pacman">
+            
+            <div class="texto texto1" id="texto1">Pac-Man - 1980</div>
+            <div class="texto texto2" id="texto2">
+              Introdujo comportamientos diferenciados en los fantasmas para
+              atrapar al jugador
+            </div>
+            <div class="texto texto3" id="texto3">
+              Marcó una revolución en la inteligencia artificial de esa época
+            </div>
+          </div>
+          <img src="imagenes/imagen1_pacman_pag1.png" id="tacho_dato1_pacman" />
+        </div>
+        <div class="dato2_pag1_pacman">
+        <div class="texto texto4" id="texto4">  
+            <div class="card_fantasmas">
+            <div class="nombre_fantasma">Blinky</div>
+            <img src="imagenes/Blinky_pacman.png" id="Blinky_imagen">
+            <div class="descripcion_fantasma">Persigue de cerca a Pac-Man hasta atraparlo</div>
+          </div>   
+        </div>  
+        <div class="texto texto5" id="texto5">  
+            <div class="card_fantasmas">
+            <div class="nombre_fantasma">Pinky</div>
+            <img src="imagenes/Pinky_pacman.png" id="Pinky_imagen">
+            <div class="descripcion_fantasma">Embosca a Pac-Man al posicionarse 4 casillas adelante</div>
+          </div>   
+        </div> 
+        <div class="texto texto6" id="texto6">  
+            <div class="card_fantasmas">
+            <div class="nombre_fantasma">Inky</div>
+            <img src="imagenes/Inky_pacman.png" id="Inky_imagen">
+            <div class="descripcion_fantasma">Rodea a Pac-Man según su posición y la de Blinky</div>
+          </div>   
+        </div> 
+        <div class="texto texto7" id="texto7">  
+            <div class="card_fantasmas">
+            <div class="nombre_fantasma">Clyde</div>
+            <img src="imagenes/Clyde_pacman.png" id="Clyde_imagen">
+            <div class="descripcion_fantasma">Persigue a Pac-man si está cerca, y sino, actúa libremente.</div>
+          </div>   
+        </div>  
+        
+        </div>
+      </div>
+      <canvas id="gameCanvas"></canvas>
+    </div>
+    <!-- Canvas para el mapa -->
+    <script src="pacman.js"></script>
+  </body>
+</html>
