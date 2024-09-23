@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planeta Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pruebaestilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <!-- informacion del 1er punto -->
+            <div id="npc-info" class="info-content active">
+                <div class="secciones">
+                    <div class="nucleo3">
+                        <img src="img/graficoTorta.png" class="graficoTorta">
+                        <div class="infoUso">
+                            <li class="infoIntroP1">
+                                <p1>La IA moderna usa algoritmos avanzados para que las máquinas aprendan, reconozcan patrones y tomen decisiones con poca intervención humana</p1>
+                            </li>
+                            <li class="infoIntroP1">
+                                <p1>Esto ha transformado industrias de videojuegos, optimizando procesos, creando contenido y automatizando tareas</p1>
+                            </li>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- informacion del 2do punto -->
+            <div id="procedural-info" class="info-content" >
+                <h2>Mejoras de la Generación Procedural</h2>
+                <ul>
+                    <li>Mejor coherencia entre los elementos generados</li>
+                    <li>Mejor adaptabilidad a las decisiones del jugador</li>
+                    <li>Mejor capacidad de generación de entornos masivos</li>
+                </ul>
+                <p><em>No Man's Sky utiliza generación procedural para crear un universo masivo</em></p>
+            </div>
+        </div>
+        <div class="planet">
+            <img src="imagenes_nucleo3/Planeta_base_nucleo3.png" alt="Planeta" id="planet-image">
+            <div class="point" id="npc-point" style="top: 20%; left: 60%;"></div>
+            <div class="point" id="procedural-point" style="top: 80%; left: 70%;"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

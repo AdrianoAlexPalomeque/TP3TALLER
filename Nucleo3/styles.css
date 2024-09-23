@@ -1,0 +1,329 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url(fuentes/Nunito-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Spacetron';
+    src: url(fuentes/SPACETRON\ PERSONAL\ USED.OTF);
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.container {
+    height: 1080px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 7%;
+}
+
+.info {
+    
+    width: 40%;
+    z-index: 2; /* Asegura que .info esté por encima */
+    
+}
+
+.planet {
+    position: relative;
+    width: 45%;
+    padding-right: 59%;
+    z-index: 1;
+}
+
+.planet img {
+    height: 100%;
+}
+
+
+/* Animación de latido */
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Aplica la animación de latido a los botones con clase "point" */
+.point {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: heartbeat 2s infinite; /* Duración de 1.5s y se repite infinitamente */
+    z-index: 3;
+}
+
+/* Detiene la animación cuando el cursor está sobre el botón */
+.point:hover {
+    animation-play-state: paused;
+}
+
+.point img {
+    height: 70%;
+}
+
+/* Para ajustar el tamaño de los puntos específicos */
+#npc-point img {
+    height: 150%;
+}
+#procedural-point img {
+    height: 150%;
+}
+
+/* Clase para el botón seleccionado */
+.point.selected {
+    background-color: blue; /* Cambia el color de fondo del botón */
+    transform: scale(1.2); /* Puedes también dejar el botón un poco más grande si lo deseas */
+}
+
+.info-content {
+    display: none;
+}
+
+.info-content.active {
+    display: flex;
+}
+
+#Proyeccion_terreno {
+    position: absolute;
+    width: 700px;
+    top: 0px;
+    left: 460px;
+}
+#Proyeccion_zombie {
+    position: absolute;
+    width: 900px;
+    top: 0px;
+    left: 460px;
+}
+.nucleo3_pag2_contenedor_textos {
+    margin-top: 92px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+}
+.titulo_normal{
+    font-family: 'Spacetron';
+    color: #FFFFFF;
+    display: block;
+    text-align: left;
+    font-size: 48px;
+    width: 400px;
+    height: 50%;
+}
+
+.nucleo3_textos {
+    width: 340px;
+    font-family: 'Nunito';
+    font-size: 20px;
+}
+
+#info_especial_pag2 {
+    margin-top: 50px;
+    width: 300px;
+    align-self: flex-end;
+    margin-right: 140px;
+}
+
+#Sims_pag2 {
+    width: 140px;
+    position: absolute;
+    top: 700px;
+    left: 180px;
+}
+
+#Flecha1_pag2 {
+    position: absolute;
+    top: 352px;
+    left: 380px;
+}
+#Flecha2_pag2 {
+    position: absolute;
+    top: 680px;
+    left: 400px;
+}
+
+#Flecha3_pag2 {
+    height: 220px;
+    position: absolute;
+    top: 440px;
+    left: 480px;
+}
+.nucleo3_pag1_contenedor_textos {
+    margin-top: 5%;
+    margin-left: 2.6%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    row-gap: 60px;
+}
+#pagina1_textos {
+    width: 700px;
+}
+.graficoN3{
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    position: relative;
+    width: 700px;
+    height: 600px;
+}
+.graficoN3 span{
+    position: relative;
+    z-index: 2;
+    left: 285px;
+    top: 250px;
+    height: 170px;
+}
+#boton1 {
+    background: linear-gradient(to right, #7c00de 0%, #0094ff 100%);   width: 540px;
+    height: 170px;
+    
+    border: 3px linear-gradient(to right, #7c00de 0%, #0094ff 100%);   width: 540px;
+    border-radius: 10px;
+    color: #f2f2f2;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    padding: 18px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+}
+#boton1:hover {
+    background: #f2f2f2;
+    color: #7c00de;
+}
+#grafico_torta_pag1 {
+    position: relative;
+    z-index: 1;
+    width: 390px;
+    height: 390px;
+    margin-top: 9%;
+    margin-right: 30%;
+}
+
+
+
+/* Pagina 3 */
+
+.nucleo3_pag3_contenedor_textos {
+    margin-top: 96px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+#Flecha1_pag3 {
+    position: absolute;
+    top: 338px;
+    left: 500px;
+    
+}
+#Flecha2_pag3 {
+    position: absolute;
+    top: 640px;
+    left: 300px;
+}
+
+#Flecha3_pag3 {
+    height: 175px;
+    position: absolute;
+    top: 416px;
+    left: 580px;
+}
+
+#pagina3_textos {
+    width: 450px;
+}
+
+#Nave_pag3 {
+    width: 200px;
+    position: absolute;
+    top: 800px;
+    left: 180px;
+}
+#info_especial_pag3 {
+    margin-top: 100px;
+    width: 300px;
+    align-self: flex-end;
+    margin-right: 130px;
+}
+
+/* Pagina 3 */
+
+.nucleo3_pag4_contenedor_textos {
+    margin-top: 140px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+}
+.titulo_critico {
+    font-family: 'Spacetron';
+    font-size: 48px;
+    color: #FF0000;
+}
+
+.titulo_normal2 {
+    font-family: 'Spacetron';
+    font-size: 48px;
+
+    color: whitesmoke;
+}
+
+#subtitulo_critico {
+    font-size: 24px;
+    color: whitesmoke;
+    width: 500px;
+}
+/* ANIMACION*/
+
+.popup-animation {
+    animation: popup 0.3s ease-out forwards;
+}
+
+@keyframes popup {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
